@@ -1,0 +1,107 @@
+/* general style */
+body {
+    font-family: Arial;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-transform: capitalize;
+} 
+/* ------------- */
+.container {
+    background-color: #F6DED8;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #D2665A;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+} 
+
+.container h2 {
+    color: #D2665A;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.container label {
+    text-align: left;
+    margin-bottom: 5px;
+    color: #D2665A;
+    font-size: 20px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #D2665A;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f9e7e2;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #B25147;
+    box-shadow: 0 0 5px rgba(210, 102, 90, 0.5);
+}
+
+
+input::placeholder {
+    color: #D2665A;
+    opacity: 0.5;
+}
+
+.button{
+    text-align: center;
+} 
+.button button {
+    background-color: #D2665A;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 20px;
+    transition: all 0.3s ease; 
+}
+.button button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+.button button:hover:not(:disabled) {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .container {
+        padding: 15px;
+    }
+    .container h2 {
+        font-size: 30px;
+    }
+    input {
+        font-size: 16px;
+    }
+    .button button {
+        font-size: 18px;
+    }
+}
+
+
+
+/*----------------------------------------------------*/
+
